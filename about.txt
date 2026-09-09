@@ -1,0 +1,6 @@
+Rasin Arafat
+Student ID: 92452532
+
+Personal portfolio website built with HTML, CSS and JavaScript.
+The gallery includes all supplied personal photos and automatically changes every 4 seconds.
+Click any photo to open it in a full-screen viewer.
