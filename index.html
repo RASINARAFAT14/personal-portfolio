@@ -42,11 +42,11 @@
 
       <div class="quote glass">
         <span class="quote-mark">“</span>
-        <p>In my mind, I'm always the best.</p>
+        <p>In my mind, I am always the best.</p>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="welcome-title">
+    <section class="section" id="welcome" aria-labelledby="welcome-title">
       <div class="section-heading">
         <p class="eyebrow">WELCOME</p>
         <h2 id="welcome-title">My personal portfolio</h2>
@@ -72,7 +72,7 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="preview-title">
+    <section class="section" id="moments" aria-labelledby="preview-title">
       <div class="section-heading">
         <p class="eyebrow">PHOTO PREVIEW</p>
         <h2 id="preview-title">A few favourite moments</h2>
@@ -86,19 +86,68 @@
       </div>
     </section>
 
-    <section class="section" id="contact">
-      <div class="contact-card glass">
-        <div>
-          <p class="eyebrow">CONTACT</p>
-          <h2>Thanks for visiting my website.</h2>
-          <p>Rasin Arafat · Student ID 92452532</p>
-          <p><strong>Email:</strong> <a href="mailto:rasinarafat526@gmail.com">rasinarafat526@gmail.com</a><br><strong>Phone:</strong> <a href="tel:0432487788">0432 487 788</a></p>
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading">
+        <p class="eyebrow">CONTACT</p>
+        <h2 id="contact-title">Get in touch</h2>
+        <p>You can contact me using the details below or complete the form.</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-card glass contact-details">
+          <div>
+            <h3>Contact details</h3>
+            <p>Rasin Arafat · Student ID 92452532</p>
+            <p><strong>Email:</strong> <a href="mailto:rasinarafat526@gmail.com">rasinarafat526@gmail.com</a><br><strong>Phone:</strong> <a href="tel:0432487788">0432 487 788</a></p>
+            <div class="social-links" aria-label="Social media links">
+              <a href="https://www.instagram.com/rasin_ur" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://www.facebook.com/rasin.arafat.2025/" target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a href="https://www.linkedin.com/in/rasin-arafat-82819b437/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+            <p class="contact-note">The form uses JavaScript validation before opening your email application.</p>
+          </div>
         </div>
-        <a class="btn primary" href="mailto:rasinarafat526@gmail.com">Email Me</a>
+
+        <form class="contact-form glass" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="contactName">Name <span>*</span></label>
+            <input id="contactName" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+            <small class="form-error" id="nameError"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="contactEmail">Email <span>*</span></label>
+            <input id="contactEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            <small class="form-error" id="emailError"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="contactPhone">Phone</label>
+            <input id="contactPhone" name="phone" type="tel" autocomplete="tel" placeholder="04xx xxx xxx">
+            <small class="form-error" id="phoneError"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="contactMessage">Message <span>*</span></label>
+            <textarea id="contactMessage" name="message" rows="5" placeholder="Write your message here" required></textarea>
+            <small class="form-error" id="messageError"></small>
+          </div>
+
+          <button class="btn primary form-submit" type="submit">Send Message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>
 
-  <footer>© 2026 Rasin Arafat · Personal Portfolio</footer>
+  <footer>
+    <div class="footer-socials" aria-label="Social media links">
+      <a href="https://www.facebook.com/rasin.arafat.2025/" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://www.instagram.com/rasin_ur" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.linkedin.com/in/rasin-arafat-82819b437/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+    <div>© 2026 Rasin Arafat · Personal Portfolio</div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

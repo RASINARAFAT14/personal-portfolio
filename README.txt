@@ -1,25 +1,25 @@
 RASIN ARAFAT - PERSONAL PORTFOLIO
 Student ID: 92452532
+Subject: Programming Environment (TCSE1PEXS)
 
 MAIN WEBSITE FILES
-- index.html   = Home page
+- index.html   = Home page + contact form
 - about.html   = About page
 - gallery.html = Gallery page
-- style.css    = Shared external stylesheet for all pages
-- script.js    = Existing gallery slideshow/lightbox behaviour
+- style.css    = Shared external stylesheet
+- script.js    = Gallery interactions + contact form validation
 - images/      = Website photos
 
-HOW TO OPEN
-1. Keep all files in this folder.
-2. Double-click index.html.
-3. Use the navigation bar to move between Home, About and Gallery.
+EXTRA FUNCTIONALITY
+1. Automatic responsive photo carousel.
+2. Gallery pauses when the mouse is over a photo and resumes when it leaves.
+3. Full-screen lightbox with previous/next controls.
+4. Contact form with JavaScript validation for name, email, phone and message.
+5. A valid contact form prepares an email to rasinarafat526@gmail.com.
 
-CURRENT RUBRIC FOCUS
-This version is prepared for the first five rubric areas:
-1. Website Structure & Layout
-2. Content & Pages
-3. Design & Aesthetics
-4. Coding Practices (HTML & CSS)
-5. Navigation & Usability
+DEPLOYMENT
+GitHub: https://github.com/RASINARAFAT14/personal-portfolio
+Cloudflare Pages: https://personal-portfolio-as3.pages.dev
 
-Extra functionality/contact-form validation, deployment and the final report can be completed later.
+HOW TO OPEN LOCALLY
+Double-click index.html.
